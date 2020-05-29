@@ -1,0 +1,302 @@
+@font-face{
+    font-family:"WebSymbols";
+    src: url("../font/websymbols-regular-webfont.eot");
+    src: url("../font/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../font/websymbols-regular-webfont.woff?#iefix") format("woff"),
+        url("../font/websymbols-regular-webfont.ttf?#iefix") format("truetype"),
+        url("../font/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #1e1e1f;
+    color: #ccc;
+    font-family: "Fjalla One";
+}
+
+.linea{
+    width: 80%;
+    margin: 0px auto;
+    color: #00c483;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 90px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-right: 50px;
+}
+
+.logo{ 
+    width: 50%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 2px #ccc;
+}
+
+.menu{
+    width: 40%;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transform: all 300ms;
+}
+
+.menu a:hover{
+    color: #00c483;
+}
+
+#contenedor{
+    width: 80%;
+    min-height: 300px;
+    background-color: #1e1e1f;
+    margin: 0px auto;
+    margin-top: 25px;
+    padding: 50px;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.part1{
+    width: 40%;
+    padding: 20px;
+}
+
+.part1 img{
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 2px 2px 3px #ccc;
+    filter: grayscale(100%);
+}
+
+.part2{
+    align-self: center;
+    width: 40%;
+    padding-right: 40px;
+}
+
+.t-page,
+.t-port{
+    font-family: "Fjalla One";
+    color: white;
+    font-size: 50px;
+}
+
+.s-page{
+    font-family: "Fjalla One";
+    color: #00c483;
+    margin-bottom: 35px;
+}
+
+.sobreMi{
+    color: #ccc;
+    /* letter-spacing: 1px; */
+    text-align: justify;
+    margin-bottom: 55px;
+}
+
+.redes,
+.redesFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "WebSymbols";
+    color: white;
+    font-size: 30px;
+    width: 50%;
+}
+
+.redes a,
+.redesFooter a{
+    color: white;
+}
+
+.redes a:hover,
+.redesFooter a:hover{
+    color: #00c483;
+}
+
+/* SECCION DE HABILIDADES */
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.lp,
+.bd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.bd{
+    width: 60%;
+    margin: 0px auto;
+}
+
+.item{
+    /* display: block; */
+    color: white;
+    border: 3px solid white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+
+/* REFERENCIAS */
+
+#ref{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    margin-top: 20px;
+}
+
+.portafolio,
+.referencias{
+    width: 40%;
+    font-size: 22px;
+}
+
+.portafolio h2,
+.referencias h2{
+    margin-bottom: 10px;
+}
+.portafolio{
+    border-right: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.portafolio ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding-left: 30px;
+    list-style: disclosure-closed;
+    /* border: 1px solid #ccc; */
+}
+
+.portafolio a{
+    padding-left: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.portafolio a:hover{
+    color: #00c483;
+}
+
+/* FOOTER */
+
+.redesFooter{
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+#footer{
+    width: 100%;
+    background-color: #1e1e1f;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+#footer a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #00c483;
+}
+
+
+/* portafolio  */
+
+#cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 75%;    
+}
+
+.project{
+    margin-bottom: 15px;
+}
+
+.project-info{
+    color: #ccc;
+}
+
+.project-info a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.project-info a:hover{
+    color: #00c483;
+}
+
+.project-info h3{
+    font-size: 16px;
+}
+
+#contenedor .t-port{
+    text-align: center;
+    margin-bottom: 30px;
+}
