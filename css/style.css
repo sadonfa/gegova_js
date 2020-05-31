@@ -24,8 +24,8 @@ body{
     width: 80%;
     margin: 0px auto;
     color: #00c483;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #header{
@@ -115,7 +115,8 @@ body{
     font-size: 50px;
 }
 
-.s-page{
+.s-page,
+.s-page-center{
     font-family: "Fjalla One";
     color: #00c483;
     margin-bottom: 35px;
@@ -179,62 +180,151 @@ body{
 .item{
     /* display: block; */
     color: white;
-    border: 3px solid white;
-    border-radius: 100%;
+    /* border: 3px solid white; */
+    /*border-radius: 100%; */
     width: 150px;
-    height: 150px;
     text-align: center;
-    line-height: 150px;
     text-transform: uppercase;
     font-size: 24px;
 }
 
+.item img {
+    width: 80%;
+}
 
-/* REFERENCIAS */
+.item span {
+    display: block;
+    margin-top: -80px;
+}
 
-#ref{
+.item p {
+    display: block;
+    margin-top: 60px;
+}
+
+
+/* PORTAFOLIO */
+
+#portafolio{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly ;
-    margin-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
-.portafolio,
-.referencias{
-    width: 40%;
-    font-size: 22px;
-}
-
-.portafolio h2,
-.referencias h2{
-    margin-bottom: 10px;
-}
-.portafolio{
-    border-right: 1px solid #ccc;
-    padding-left: 20px;
-}
-
-.portafolio ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    padding-left: 30px;
-    list-style: disclosure-closed;
-    /* border: 1px solid #ccc; */
-}
-
-.portafolio a{
+#portafolio a{
     padding-left: 10px;
     color: #ccc;
     text-decoration: none;
-    font-size: 22px;
+    font-family: "WebSymbols";
+    font-size: 60px;
     letter-spacing: 2px;
 }
 
-.portafolio a:hover{
+#portafolio a:hover{
     color: #00c483;
+}
+
+.t-page-center{
+    font-family: "Fjalla One";
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.s-page-center{
+    /* font-size: 13px; */
+    text-align: center;
+}
+
+
+.item_porta{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 50px;    
+}
+
+.item_porta h3{
+    /* font-size: 30px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* CONTACTO */
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid #ccc; */
+}
+
+.formulario,
+.cont{
+    width: 40%;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form {
+    display: block;
+    width: 80%;
+    height: 45px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.mensj{
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    padding: 17px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.boton{
+    display: block;
+    width: 35%;
+    padding: 10px 0px;
+    margin: 0px auto;
+    font-size: 18px;
+    background-color: #ccc;
+    color: #1e1e1f;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 10px rgb(167, 167, 167) inset;
+}
+
+.boton:hover{
+    background-color: #00c483;
+    box-shadow: 3px 3px 10px #008f5f inset;
+    color: black;
+}
+
+.cont{
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.cont h5 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cont p {
+    font-size: 18px;
+}
+
+.linea-interna{
+    width: 70%;
+    margin: 0px auto;
+    color: #00c483;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* FOOTER */
