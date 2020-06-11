@@ -4,11 +4,11 @@ $nombre = $_GET['nombre'];
 $mail = $_GET['email'];
 $mensaje = $_GET['mensaje'];
 
+// $to = "sadonfa@gmail.com";
+$subject = $nombre . " - Gegova.co";
+$message = "Nombre: " .  $nombre . "\nCorreo: " . $mail . "\n" . "Mensaje: " . $mensaje;
+// $m = "Esto es una prueba de MAIL()";
 
-$to = "sadonfa@gmail.com";
-$subject = "$nombre - Gegova.co";
-$message = $mail + $mensaje;
+$correo = mail('sadonfa@gmail.com', $subject, $message);
 
-mail($to, $subject, $mensaje);
-
-header("Location: ../index.html");
+header("Location: ../index.html/#con");
